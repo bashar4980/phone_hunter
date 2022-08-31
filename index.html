@@ -10,12 +10,64 @@
 <body>
 
 <div class="container py-5">
+
+    
     <div>
         <h2 class="text-center text-primary pb-5">Search Your Best phone</h2>
+
+        <div class="input-group pb-5 w-50 mx-auto">
+            <input id="searchValue"  class="form-control"
+            type="text" placeholder="Please Enter your phone....">
+            <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+      <div id="no_result" class="d-none">
+        <h2 class="text-center text-danger pb-5">Search not found.......</h2>
+      </div>
+
     </div>
 
 
+
+    <!-- Modal  -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="phoneTitle">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal  -->
+
+
+
+
+  
+    <div class="text-center d-none" id="loading">
+         
+        <div class="spinner-border " role="status" aria-hidden="true"></div>
+        <strong>Loading...</strong>
+      </div>
+
+   
+
+
     <div class=" row g-4" id="phone_container">
+
+
+     
        
         
 
